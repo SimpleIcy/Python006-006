@@ -11,7 +11,7 @@ logging.basicConfig(filename=log_file_name, format='%(asctime)s %(message)s', le
 
 def special_function(times=10):
     """ 此函数在调用时，会将进入函数的时间和出去函数的时间记录到日志，日志路径
-    为程序运行目录，日志名为python-xxxx-xx-xx-xxxxxx.log"""
+    为程序运行目录，日志名为python-xxxx-xx-xx.log"""
     enter_msg = '你调用了函数%s。' % special_function.__name__
     logging.debug(msg=enter_msg)
     for i in range(times):
